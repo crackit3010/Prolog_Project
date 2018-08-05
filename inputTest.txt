@@ -1,0 +1,98 @@
+Input File for Problem 1
+
+Exercise 1
+
+
+TESTCASE:1
+
+isGroup([a,b,c],[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,b]]).
+
+here,
+S=[a,b,c]
+Op=[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,b]]
+//output: true
+
+
+TESTCASE:2
+
+isGroup([a,b,c],[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,c]]).
+//output: false
+
+TESTCASE:3
+
+isGroup([0,1,2],[[0,0,0],[0,1,1],[0,2,2],[1,0,1],[1,1,2],[1,2,0],[2,0,2],[2,1,0],[2,2,1]]).
+//output : true
+
+
+TESTCASE:4
+
+isGroup([0,1,2],[[0,0,0],[0,1,1],[0,2,2],[1,0,1],[1,1,2],[1,2,0],[2,0,2],[2,1,0],[2,2,2]]).
+//output : false
+
+
+TESTCASE:5
+
+isGroup([0,1],[[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).
+here, 
+S=[0,1],
+Op=[[0,0,0],[0,1,1],[1,0,1],[1,1,0]]
+//Output = true.
+
+TESTCASE:6
+
+isGroup([0,1],[[0,0,0],[0,1,1],[1,0,1],[1,1,1]]).
+//Output = false
+
+
+TESTCASE:7 // Not closed
+
+isGroup([0,1],[[0,0,2],[0,1,1],[1,0,1],[1,1,1]]).  
+//Output = false
+
+
+TESTCASE:8 // Not Associative
+
+isGroup([0,1],[[0,0,1],[0,1,1],[1,0,0],[1,1,0]]).
+//Output = false
+
+
+TESTCASE:9 //No identity element
+
+isGroup([0,1],[[0,0,0],[0,1,0],[1,0,0],[1,1,0]]).
+//Output = false
+
+
+TESTCASE:10 // No inverse
+
+isGroup([0,1],[[0,0,0],[0,1,0],[1,0,0],[1,1,1]]).
+//output : false
+
+
+Exercise 2: Abelian
+
+
+TESTCASE:1
+
+isAbelian([a,b,c],[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,b]]).
+
+here,
+S=[a,b,c]
+Op=[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,b]]
+//output: true
+
+
+TESTCASE:2
+isAbelian([a,b,c],[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,c]]).
+
+here,
+S=[a,b,c]
+Op=[[a,a,a],[a,b,b],[a,c,c],[b,a,b],[b,b,c],[b,c,a],[c,a,c],[c,b,a],[c,c,c]]
+//output: false
+
+
+
+
+
+
+
+
